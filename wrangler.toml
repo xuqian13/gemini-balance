@@ -1,0 +1,13 @@
+# wrangler.toml
+
+# 你的 Worker 名称
+name = "xuqian"
+
+# 你的 Python 应用入口文件
+main = "app/main.py"
+
+# 设置兼容性日期
+compatibility_date = "2025-08-20" # 建议使用一个较新的日期
+
+# 启用 Python Worker 的兼容性标志 (这是解决问题的关键)
+compatibility_flags = ["python_workers"]
